@@ -6,7 +6,7 @@ exports.handler = async (event) => {
   const TTL = 300;
   const s3Params = {
     Bucket: process.env.BUCKET_NAME,
-    key: filename,
+    Key: filename,
     Expires: TTL,
     ContentType: "application/pdf",
   };
